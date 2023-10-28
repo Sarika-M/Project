@@ -1,0 +1,158 @@
+:root{
+    --green:#219C90;
+    --yellow:#E9B824;
+    --red: crimson;
+    --white:whitesmoke;
+}
+body,h2{
+    margin:0;
+    font-family: Arial, Helvetica, sans-serif;  
+}
+.landing
+{
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-image: url('../Restaurant/img/pexels-jessica-lewis-858094\ \(1\).jpg');
+    color: var(--white);
+}
+header a{
+    text-decoration:none;
+    color: var(--yellow);
+    min-width: 120px;
+}
+header{
+    display: flex;
+    padding: 1em;
+    flex-wrap:wrap ;
+    row-gap: 1em;
+}
+header h2 i,nav a i{
+    margin-right: .5em;
+}
+#logo{
+    flex:3;
+    font-size:1.2em;
+    min-width: 260px;
+}
+nav{
+    flex:2;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    flex:1;
+}
+nav a:hover{
+    color: var(--green);
+}
+.maintext{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height:50vh;
+    padding: 2em;
+  
+}
+.maintext a:nth-child(1){
+    text-decoration: none;
+    font-size: 15px;
+    color: var(--red);
+    font-weight: bolder;
+}
+
+.tagline1{
+    color: var(--red);
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+.tagline2{
+    color: var(--yellow);
+}
+.maintext div{
+    margin-top: .75em;
+}
+.maintext button{
+    width:20vw;
+    margin-top: 2em;
+    border-radius: 10px;
+    padding: .7em;
+    background-color: var(--green);
+    border: 1px solid var(--green);
+    color: var(--white);
+}
+.starter{
+    display: flex;
+    justify-content:left;
+    color: rgb(23, 23, 22);
+}
+.menu{
+    display: grid;
+    background: linear-gradient(to right,rgb(100,100,100),rgb(53, 52, 52));
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    color: var(--white);
+}
+#Menuheading,#locheading{
+    background: linear-gradient(to right,rgb(100,100,100),rgb(53, 52, 52));
+    font-size:2.5em;
+    color: var(--red);
+    display: flex;
+    justify-content: center;
+}
+.menu th{
+    color: var(--green);
+    font-size: 1.8em;  
+}
+table{
+    width:100%;
+    padding:1em;
+}
+.menu tr{
+display: flex;
+justify-content: center;
+margin-top: 0.8em;
+}
+.menu td:nth-child(1){
+    flex:1;
+    justify-self: left;
+}
+.menu td:nth-child(2){
+    
+    justify-self: right;
+}
+.maincourse{
+    grid-row: span 2;
+}
+.locations{
+    background: linear-gradient(to right,rgb(100,100,100),rgb(53, 52, 52));
+    color: var(--white);  
+    display: flex;  
+    flex-wrap: wrap;
+   
+}
+.locations h2{
+    color: var(--green);
+    margin-bottom: .8em;
+}
+.locations div{
+    flex: 1;
+    padding: 1em;
+    min-width: 220px;
+
+}
+footer{
+    background-color: rgb(41, 40, 40);
+    color: var(--white);
+    padding: .25em 1em;
+    text-align: center;
+
+}
+.social-menu a:hover{
+    color: var(--red);
+}
+.social-menu a{
+padding: 10px;
+position: relative;
+
+
+}
